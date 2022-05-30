@@ -1,2 +1,4 @@
+#!/bin/bash
+
 echo 'aboba'
 mkdir aboba
