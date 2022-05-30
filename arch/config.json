@@ -1,0 +1,36 @@
+
+{
+    "additional-repositories": [
+        "multilib",
+        "testing"
+    ],
+    "archinstall-language": "English",
+    "audio": "pulseaudio",
+    "bootloader": "systemd-bootctl",
+    "config_version": "2.4.2",
+    "debug": false,
+    "desktop-environment": "kde",
+    "gfx_driver": "Nvidia (open-source)",
+    "harddrives": [
+        "/dev/sda"
+    ],
+    "hostname": "gmanka",
+    "keyboard-layout": "us",
+    "mount_point": null,
+    "nic": {
+        "dhcp": true,
+        "dns": null,
+        "gateway": null,
+        "iface": null,
+        "ip": null,
+        "type": "iso"
+    },
+    "plugin": null,
+    "profile": {
+        "path": "/usr/lib/python3.10/site-packages/archinstall/profiles/desktop.py"
+    },
+    "script": "guided",
+    "silent": false,
+    "swap": false,
+    "version": "2.4.2"
+}
