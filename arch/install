@@ -11,6 +11,6 @@ echo 'Press enter to continue and FULLY WIPE /dev/sda'
 
 read -p ''
 
-# pacman -Syu archinstall archlinux-keyring
+pacman -Syu archinstall archlinux-keyring
 
-# archinstall --config https://gmanka.tk/archc/config.json --disk-layout https://gmanka.tk/arch/disk-layout.json --creds https://gmanka.tk/arch/creds.json
+archinstall --config https://gmanka.tk/archc/config.json --disk-layout https://gmanka.tk/arch/disk-layout.json --creds https://gmanka.tk/arch/creds.json
