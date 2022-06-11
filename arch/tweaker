@@ -1,4 +1,4 @@
 #!/bin/bash
 
-
-wget gmanka.tk/arch/sddm.conf
+echo tweaking sddm.conf
+sudo curl -sSL gmanka.tk/arch/sddm.conf > /etc/sddm.conf
