@@ -13,5 +13,9 @@ read -p ''
 
 pacman -Syu archinstall archlinux-keyring
 
+<<<<<<< HEAD:arcin
 # archinstall --config https://gmanka.tk/arch/config.json --disk-layout https://gmanka.tk/arch/disk-layout.json --creds https://gmanka.tk/arch/creds.json
 archinstall
+=======
+archinstall --config https://gmanka.tk/archc/config.json --disk-layout https://gmanka.tk/arch/disk-layout.json --creds https://gmanka.tk/arch/creds.json
+>>>>>>> 6fb18b03962232fa2e1404ded6e26065c49eb6b8:arch/install
