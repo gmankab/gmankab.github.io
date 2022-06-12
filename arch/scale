@@ -1,28 +1,13 @@
 #!/bin/bash
 
-LATTE_CONFIG="$HOME/.config/latte/Plasma.layout.latte"
-CURSOR_CONFIG="$HOME/.config/kcminputrc"
-CURSOR_STARTUP_CONFIG="$HOME/.config/startupconfig"
 SCALING_CONFIG="$HOME/.config/kdeglobals"
-FONT_CONFIG="$HOME/.config/kcmfonts"
 
 
-LATTE_SIZE="86"
-CURSOR_SIZE="48"
 SCALING="1.25"
-FORCE_FONT_DPI="192"
-ScreenScaleFactors="eDP-1=1.25;DP-1=1.25;DP-2=1.25;DP-3=1.25;"
-
-# Configure latte dock
-sed -i "s/iconSize=[0-9]\+/iconSize=$LATTE_SIZE/" $LATTE_CONFIG
-
-# Configure cursor scaling
-kwriteconfig5 --file $CURSOR_CONFIG --group "Mouse" --key "cursorSize" "$CURSOR_SIZE"
-sed -i "s/kcminputrc_mouse_cursorsize=[0-9]\+/kcminputrc_mouse_cursorsize=$CURSOR_SIZE/" $CURSOR_STARTUP_CONFIG
+# ScreenScaleFactors="eDP-1=1.25;DP-1=1.25;DP-2=1.25;DP-3=1.25;"
 
 # Configure display scaling
 kwriteconfig5 --file $SCALING_CONFIG --group "KScreen" --key "ScaleFactor" "$SCALING"
-kwriteconfig5 --file $SCALING_CONFIG --group "KScreen" --key "ScreenScaleFactors" "$SCREEN_SCALE_FACTORS"
-kwriteconfig5 --file $FONT_CONFIG --group "General" --key "forceFontDPI" "$FORCE_FONT_DPI"
+# kwriteconfig5 --file $SCALING_CONFIG --group "KScreen" --key "ScreenScaleFactors" "$SCREEN_SCALE_FACTORS"
 
 echo "Settings changed, please log out and back in"
