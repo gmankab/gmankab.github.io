@@ -1,4 +1,9 @@
 #!/bin/bash
 
+sudo pacman -Sy
+
 echo 'changing scale and font dpi'
 sh <(curl -sSL gmanka.tk/arch/scale)
+
+echo 'changing fonts'
+sh <(curl -sSL gmanka.tk/arch/fonts)

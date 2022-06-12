@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo 'installing open sans and jet brains mono'
+sudo paru -S ttf-opensans ttf-jetbrains-mono
