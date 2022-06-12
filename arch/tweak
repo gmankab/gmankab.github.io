@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo 'changing scale'
+echo 'changing scale and font dpi'
 sh <(curl -sSL gmanka.tk/arch/scale)
