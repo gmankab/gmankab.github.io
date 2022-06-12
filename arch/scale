@@ -11,7 +11,7 @@ LATTE_SIZE="86"
 CURSOR_SIZE="48"
 SCALING="1.25"
 FORCE_FONT_DPI="192"
-ScreenScaleFactors="eDP-1=2;DP-1=2;DP-2=2;DP-3=2;"
+ScreenScaleFactors="eDP-1=1.25;DP-1=1.25;DP-2=1.25;DP-3=1.25;"
 
 # Configure latte dock
 sed -i "s/iconSize=[0-9]\+/iconSize=$LATTE_SIZE/" $LATTE_CONFIG
