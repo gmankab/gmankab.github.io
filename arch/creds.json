@@ -1,9 +1,0 @@
-{
-    "!root-password": "1",
-    "!superusers": {
-        "nonroot": {
-            "!password": "1"
-        }
-    },
-    "!users": {}
-}
