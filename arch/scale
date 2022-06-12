@@ -1,13 +1,13 @@
 #!/bin/bash
 
 SCALING_CONFIG="$HOME/.config/kdeglobals"
+FONT_CONFIG="$HOME/.config/kcmfonts"
 
 
 SCALING="1.25"
-# ScreenScaleFactors="eDP-1=1.25;DP-1=1.25;DP-2=1.25;DP-3=1.25;"
+FORCE_FONT_DPI="125"
 
-# Configure display scaling
 kwriteconfig5 --file $SCALING_CONFIG --group "KScreen" --key "ScaleFactor" "$SCALING"
-# kwriteconfig5 --file $SCALING_CONFIG --group "KScreen" --key "ScreenScaleFactors" "$SCREEN_SCALE_FACTORS"
+kwriteconfig5 --file $FONT_CONFIG --group "General" --key "forceFontDPI" "$FORCE_FONT_DPI"
 
 echo "Settings changed, please log out and back in"
