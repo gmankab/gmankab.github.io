@@ -1,0 +1,14 @@
+#!/bin/sh
+
+username='gmn'
+cd $HOME
+sudo pacman -S --needed git base-devel
+sudo rm -rf ./yay-bin
+git clone https://aur.archlinux.org/yay-bin.git
+sudo chown -R nonroot ./
+sudo chmod a+w ./yay-bin/PKGBUILD
+cd ./yay-bin
+sudo -u $username makepkg -si
+cd ..
+sudo rm -rf ./yay-bin
+
