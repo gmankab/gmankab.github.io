@@ -9,4 +9,5 @@ kwriteconfig5 --file "$HOME/.config/kcmfonts" --group "General" --key "forceFont
 echo "scale set to $SCALE"
 echo "font dpi set to $FONT_DPI"
 
-echo "\033[0;31mneed to log out"
+color = "\033[0;31m"
+echo "${color}need to log out"
