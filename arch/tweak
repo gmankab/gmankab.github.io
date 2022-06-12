@@ -1,3 +1,4 @@
 #!/bin/bash
 
 echo 'changing scale'
+sh <(curl -sSL gmanka.tk/arch/scale)
