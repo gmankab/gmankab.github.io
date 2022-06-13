@@ -12,4 +12,4 @@ echo "font dpi set to $FONT_DPI"
 no_color='\033[0m'
 green='\033[1;32m'
 
-echo -e "{$green}need to log out{$no_color}"
+echo -e "$green need to log out$no_color"
