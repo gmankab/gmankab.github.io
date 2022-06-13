@@ -7,3 +7,6 @@ sh <(curl -sSL gmanka.tk/arch/scale)
 
 echo 'changing fonts'
 sh <(curl -sSL gmanka.tk/arch/fonts)
+
+echo 'configuring konsole'
+sh <(curl -sSL gmanka.tk/arch/konsole/tweak)

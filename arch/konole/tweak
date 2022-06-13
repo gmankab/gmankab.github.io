@@ -1,0 +1,4 @@
+#!/bin/bash
+
+curl -sSL gmanka.tk/arch/.config/konsolerc > '$HOME/.config/konsolerc'
+curl -sSL gmanka.tk/arch/konsole/gmanka.profile > '$HOME/.local/share/gmanka.profile'
