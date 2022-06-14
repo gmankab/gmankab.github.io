@@ -10,7 +10,7 @@ sudo pacman -Sy
 echo -e "$green changing scale and font dpi$no_color"
 sh <(curl -sSL gmanka.tk/arch/scale)
 
-echo -e "$green changing fonts$no_color"
+echo -e "$green installing fonts$no_color"
 sh <(curl -sSL gmanka.tk/arch/fonts)
 
 echo -e "$green configuring konsole$no_color"
