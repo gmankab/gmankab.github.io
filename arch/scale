@@ -15,7 +15,7 @@ kwriteconfig5 --file "$HOME/.config/kdeglobals" --group "General" --key "font" "
 
 kwriteconfig5 --file "$HOME/.config/kdeglobals" --group "General" --key "menuFont" "Open Sans,10,-1,5,50,0,0,0,0,0"
 
-kwriteconfig5 --file "$HOME/.config/kdeglobals" --group "General" --key "smallestReadableFont" "Open Sans,19,-1,5,57,0,0,0,0,0"
+kwriteconfig5 --file "$HOME/.config/kdeglobals" --group "General" --key "smallestReadableFont" "Open Sans,10,-1,5,57,0,0,0,0,0"
 
 kwriteconfig5 --file "$HOME/.config/kdeglobals" --group "General" --key "toolBarFont" "Open Sans,10,-1,5,50,0,0,0,0,0"
 
