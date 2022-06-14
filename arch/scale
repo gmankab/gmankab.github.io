@@ -15,11 +15,19 @@ kwriteconfig5 --file "$HOME/.config/kdeglobals" --group "General" --key "font" "
 
 kwriteconfig5 --file "$HOME/.config/kdeglobals" --group "General" --key "menuFont" "Open Sans,10,-1,5,50,0,0,0,0,0"
 
-kwriteconfig5 --file "$HOME/.config/kdeglobals" --group "General" --key "smallestReadableFont" "Open Sans,8,-1,5,50,0,0,0,0,0"
+kwriteconfig5 --file "$HOME/.config/kdeglobals" --group "General" --key "smallestReadableFont" "Open Sans,19,-1,5,57,0,0,0,0,0"
 
-kwriteconfig5 --file "$HOME/.config/kdeglobals" --group "General" --key "Open Sans,10,-1,5,50,0,0,0,0,0" "Open Sans,10,-1,5,50,0,0,0,0,0"
+kwriteconfig5 --file "$HOME/.config/kdeglobals" --group "General" --key "toolBarFont" "Open Sans,10,-1,5,50,0,0,0,0,0"
 
 echo "font dpi set to $FONT_DPI"
 echo "scale set to $SCALE"
 echo "default fonts changed to open sans and jet brains mono"
 echo -e "$green need to log out$no_color"
+
+
+fixed=JetBrains Mono,10,-1,5,57,0,0,0,0,0,Medium
+font=Open Sans,10,-1,5,50,0,0,0,0,0
+menuFont=Open Sans,10,-1,5,50,0,0,0,0,0
+shadeSortColumn=true
+smallestReadableFont=Open Sans,8,-1,5,50,0,0,0,0,0
+=Open Sans,10,-1,5,50,0,0,0,0,0
