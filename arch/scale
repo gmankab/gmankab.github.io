@@ -1,15 +1,31 @@
 #!/bin/bash
 
-SCALE="1.25"
-FONT_DPI="125"
+# git repo: https://github.com/gmankab/gmankab.github.io/arch
+# license: GNU General Public License v3 - https://github.com/IQAndreas/markdown-licenses/blob/master/gnu-gpl-v3.0.md
+
 no_color='\033[0m'
 green='\033[1;32m'
 
 
-kwriteconfig5 --file "$HOME/.config/kdeglobals" --group "KScreen" --key "ScaleFactor" "$SCALE"
-kwriteconfig5 --file "$HOME/.config/kcmfonts" --group "General" --key "forceFontDPI" "$FONT_DPI"
+kwriteconfig5 --file "$HOME/.config/kdeglobals" --group "KScreen" --key "ScaleFactor" "1.25"
 
-echo "scale set to $SCALE"
+kwriteconfig5 --file "$HOME/.config/kdeglobals" --group "KScreen" --key "fixed" "JetBrains Mono,10,-1,5,57,0,0,0,0,0,Medium"
+
+# kwriteconfig5 --file "$HOME/.config/kdeglobals" --group "KScreen" --key "ScaleFactor" "1.25"
+
+# kwriteconfig5 --file "$HOME/.config/kdeglobals" --group "KScreen" --key "ScaleFactor" "1.25"
+
+# kwriteconfig5 --file "$HOME/.config/kdeglobals" --group "KScreen" --key "ScaleFactor" "1.25"
+
+
+# kwriteconfig5 --file "$HOME/.config/kcmfonts" --group "General" --key "forceFontDPI" "125"
+
+# font=Open Sans,10,-1,5,50,0,0,0,0,0
+# menuFont=Open Sans,10,-1,5,50,0,0,0,0,0
+# smallestReadableFont=Open Sans,8,-1,5,50,0,0,0,0,0
+# toolBarFont=Open Sans,10,-1,5,50,0,0,0,0,0
+
 echo "font dpi set to $FONT_DPI"
-
+echo "scale set to $SCALE"
+echo "default fonts changed to open sans and jet brains mono"
 echo -e "$green need to log out$no_color"

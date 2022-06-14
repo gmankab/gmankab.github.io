@@ -7,11 +7,11 @@ sudo pacman -Sy
 
 # you can delete or comment tweak if you don't need it
 
-echo -e "$green changing scale and font dpi$no_color"
-sh <(curl -sSL gmanka.tk/arch/scale)
-
 echo -e "$green installing fonts$no_color"
 sh <(curl -sSL gmanka.tk/arch/fonts)
+
+echo -e "$green changing scale, font dpi and system fonts$no_color"
+sh <(curl -sSL gmanka.tk/arch/scale)
 
 echo -e "$green configuring konsole$no_color"
 sh <(curl -sSL gmanka.tk/arch/konsole)
