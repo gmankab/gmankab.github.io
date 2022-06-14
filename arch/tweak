@@ -1,12 +1,15 @@
 #!/bin/bash
 
+no_color='\033[0m'
+green='\033[1;32m'
+
 sudo pacman -Sy
 
-echo 'changing scale and font dpi'
+echo -e "$green changing scale and font dpi$no_color"
 sh <(curl -sSL gmanka.tk/arch/scale)
 
-echo 'changing fonts'
+echo -e "$green changing fonts$no_color"
 sh <(curl -sSL gmanka.tk/arch/fonts)
 
-echo 'configuring konsole'
+echo -e "$green configuring konsole$no_color"
 sh <(curl -sSL gmanka.tk/arch/konsole/tweak)
