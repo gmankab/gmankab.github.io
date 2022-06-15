@@ -1,7 +1,8 @@
 #!/bin/bash
 
-yes | sudo pacman -Sy git
+sudo pacman --noconfirm -Sy git
 
 git config --global user.email "gmankab@gmail.com"
 git config --global user.name "gmanka"
 git config --global credential.helper store
+git config --global init.defaultBranch main

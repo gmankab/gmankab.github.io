@@ -10,13 +10,13 @@ yt_enhancer="$HOME/Desktop/yt_enhancer.xpi"
 yt_dislikes="$HOME/Desktop/yt_dislikes.xpi"
 yt_sponsor_block="$HOME/Desktop/yt_sponsor_block.xpi"
 
-curl -L addons.mozilla.org/firefox/downloads/file/3961087 --output "$ublock"
-curl -L addons.mozilla.org/firefox/downloads/file/3898202 --output "$vimium"
-curl -L addons.mozilla.org/firefox/downloads/file/3949235 --output "$yt_enhancer"
-curl -L addons.mozilla.org/firefox/downloads/file/3941589 --output "$yt_dislikes"
-curl -L addons.mozilla.org/firefox/downloads/file/3958238 --output "$yt_sponsor_block"
+curl -L 'addons.mozilla.org/firefox/downloads/file/3961087' --output "$ublock"
+curl -L 'addons.mozilla.org/firefox/downloads/file/3898202' --output "$vimium"
+curl -L 'addons.mozilla.org/firefox/downloads/file/3949235' --output "$yt_enhancer"
+curl -L 'addons.mozilla.org/firefox/downloads/file/3941589' --output "$yt_dislikes"
+curl -L 'addons.mozilla.org/firefox/downloads/file/3958238' --output "$yt_sponsor_block"
 
-echo -e "$green now firefox will be launced to install some addons, you need to press 'Add' in firefox window to confirm installing addon, and then close firefox. You can press$blue Alt+a$green to confirm installing and$blue Ctrl+w$green to close windows without mouse. Press enter to continue$no_color"
+echo -e "$green now firefox will be launced to install some addons, you need to press 'Add' in firefox window to confirm installing addon, and then close firefox. You can press$blue Alt+a$green to confirm installing and$blue Ctrl+w$green to close window without mouse. Press enter to continue$no_color"
 read -r
 
 firefox "$ublock"
