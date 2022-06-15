@@ -31,15 +31,4 @@ echo "default fonts changed to open sans and jet brains mono"
 echo "disabled screen locking timeout"
 echo -e "$green need to log out$no_color"
 
-yes | sudo pacman -Sy python-pip
-
-pip install -U pip
-pip install dbus-python
-
-chwp="$HOME/Desktop/ksetwallpaper.py"
-wp="$HOME/Desktop/wp.png"
-curl -L gmanka.tk/arch/kde/ksetwallpaper.py --output "$chwp"
-curl -L gmanka.tk/arch/wb/blobs-d.png --output "$wp"
-
-"$chwp" -f "$wp"
-"$chwp" -l -f "$wp"
+curl -L gmanka.tk/wp/blobs-d.png --output /usr/share/wallpapers/wall/wall.png

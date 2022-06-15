@@ -1,5 +1,7 @@
 #!/bin/bash
 
-' ' | sudo pacman -Sy telegram steam neofetch micro
+yes | sudo pacman -Sy python-pip telegram steam neofetch micro
+
+sudo pip install -U pip
 
 ' ' | sudo paru -S inxi
