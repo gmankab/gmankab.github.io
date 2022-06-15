@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo pacman --noconfirm -Sy zsh git

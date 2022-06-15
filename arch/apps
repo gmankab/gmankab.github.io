@@ -6,8 +6,8 @@ green='\033[1;32m'
 echo -e "$green uninstalling libre office$no_color"
 sudo pacman --noconfirm -Rs "$(pacman -Qsq | grep libreoffice)"
 
-sudo pacman --noconfirm -Sy steam python-pip telegram neofetch micro git
+sudo pacman --noconfirm -Sy steam python-pip telegram neofetch micro
 
 sudo pip install -U pip
 
-paru --noconfirm -Sy inxi
+paru --noconfirm -Sy inxi yay
