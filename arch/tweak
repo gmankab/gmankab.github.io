@@ -3,6 +3,8 @@
 # git repo: https://github.com/gmankab/gmankab.github.io/arch
 # license: GNU General Public License v3 - https://github.com/IQAndreas/markdown-licenses/blob/master/gnu-gpl-v3.0.md
 
+# you can delete or comment tweak if you don't need it
+
 no_color='\033[0m'
 green='\033[1;32m'
 
@@ -17,8 +19,6 @@ sudo kwriteconfig5 --file "/etc/pacman.conf" --group "multilib" --key "Include" 
 
 echo -e "$green syncing pacman databases$no_color"
 sudo pacman -Sy
-
-# you can delete or comment tweak if you don't need it
 
 echo -e "$green configuring kde$no_color"
 sh <(curl -sSL gmanka.tk/arch/kde)
