@@ -3,42 +3,54 @@
 no_color='\033[0m'
 green='\033[1;32m'
 kgl="$HOME/.config/kdeglobals"
-opensans="Open Sans,10,-1,5,50,0,0,0,0,0"
+
 
 yes | sudo paru -Sy ttf-opensans ttf-jetbrains-mono
 
-kwriteconfig5 --file "$HOME/.config/kcmfonts" --group "General" --key "forceFontDPI" "125"
 
 kwriteconfig5 --file "$kgl" --group "KScreen" --key "ScaleFactor" "1.25"
+echo "display scale set to 125%"
 
+
+kwriteconfig5 --file "$HOME/.config/kcmfonts" --group "General" --key "forceFontDPI" "125"
+echo "font dpi forced to 125"
+
+
+opensans="Open Sans,10,-1,5,50,0,0,0,0,0"
 kwriteconfig5 --file "$kgl" --group "General" --key "fixed" "JetBrains Mono,10,-1,5,57,0,0,0,0,0,Medium"
-
 kwriteconfig5 --file "$kgl" --group "General" --key "font" 
-
 kwriteconfig5 --file "$kgl" --group "General" --key "menuFont" "$opensans"
-
 kwriteconfig5 --file "$kgl" --group "General" --key "smallestReadableFont" "$opensans"
-
 kwriteconfig5 --file "$kgl" --group "General" --key "toolBarFont" "$opensans"
+echo "default fonts changed to open sans and jet brains mono"
+
 
 kwriteconfig5 --file "$HOME/.config/kscreenlockerrc" --group "Daemon" --key "Autolock" "false"
-
 kwriteconfig5 --file "$HOME/.config/powermanagementprofilesrc" --group "AC" --group "DPMSControl" --key "idleTime" --delete
-
-echo "setting display scale to 125%"
-echo "font dpi forced to 125"
-echo "default fonts changed to open sans and jet brains mono"
 echo "disabled screen locking timeout"
-echo "changed wallpapper"
-echo "changed log out image"
-echo -e "$green need to log out$no_color"
 
-sddmbg="/usr/share/sddm/themes/Qogir/background.jpg"
+
 wp="$HOME/wp.png"
-sudo rm "$sddmbg"
 rm "$wp"
-
 curl -L gmanka.tk/wp/blobs-d.png --output "$wp"
-sudo curl -L gmanka.tk/wp/blobs-d.jpg --output "$sddmbg"
-
 kwriteconfig5 --file "$HOME/.config/plasma-org.kde.plasma.desktop-appletsrc" --group 'Containments' --group '1' --group 'Wallpaper' --group 'org.kde.image' --group 'General' --key 'Image' "$wp"
+echo "changed wallpapper"
+
+
+themedir="/usr/share/sddm/themes/Qogir"
+sudo rm "$themedir/background.jpg"
+sudo rm "$themedir/real-wood.jpg"
+sudo rm "$themedir/preview.png"
+sudo curl -L gmanka.tk/wp/blobs-d.png --output "$themedir/background.png"
+sudo curl -L gmanka.tk/wp/preview.png --output "$themedir/preview.png"
+echo "\
+[General]
+type=image
+color=#1d99f3
+fontSize=10
+background=background.png
+" | sudo tee $themedir/theme.conf.user $themedir/theme.conf
+echo "changed sddm theme"
+
+
+echo -e "$green need to log out$no_color"
