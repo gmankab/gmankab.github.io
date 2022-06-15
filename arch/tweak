@@ -14,11 +14,8 @@ sudo pacman -Sy
 
 # you can delete or comment tweak if you don't need it
 
-echo -e "$green setting display scale to 125%$no_color"
-kwriteconfig5 --file "$HOME/.config/kdeglobals" --group "KScreen" --key "ScaleFactor" "1.25"
-
-echo -e "$green configuring fonts$no_color"
-sh <(curl -sSL gmanka.tk/arch/fonts)
+echo -e "$green configuring kde$no_color"
+sh <(curl -sSL gmanka.tk/arch/kde)
 
 echo -e "$green configuring konsole$no_color"
 sh <(curl -sSL gmanka.tk/arch/konsole)

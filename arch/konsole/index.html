@@ -3,7 +3,7 @@
 no_color='\033[0m'
 green='\033[1;32m'
 
-curl -sSL gmanka.tk/arch/dotconfig/konsolerc > "$HOME/.config/konsolerc"
-curl -sSL gmanka.tk/arch/konsole/gmanka.profile > "$HOME/.local/share/konsole/gmanka.profile"
+curl -L gmanka.tk/arch/kde/konsolerc --output "$HOME/.config/konsolerc"
+curl -L gmanka.tk/arch/konsole/gmanka.profile --output "$HOME/.local/share/konsole/gmanka.profile"
 
 echo -e "$green done$no_color"
