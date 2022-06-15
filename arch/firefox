@@ -1,6 +1,5 @@
 #!/bin/bash
 
-addon="$HOME/Desktop/addon.xpi"
 no_color='\033[0m'
 green='\033[1;32m'
 
@@ -8,22 +7,29 @@ echo -e "$green now firefox will be launced to install some addons, you need to 
 
 read -r
 
-curl -L addons.mozilla.org/firefox/downloads/file/3961087 --output "$addon"
-firefox "$addon"
-rm "$addon"
+ublock="$HOME/Desktop/ublock.xpi"
+vimium="$HOME/Desktop/vimium.xpi"
+yt_enhancer="$HOME/Desktop/yt_enhancer.xpi"
+yt_dislikes="$HOME/Desktop/yt_dislikes.xpi"
+yt_sponsor_block="$HOME/Desktop/yt_sponsor_block.xpi"
 
-curl -L addons.mozilla.org/firefox/downloads/file/3898202 --output "$addon"
-firefox "$addon"
-rm "$addon"
+curl -L addons.mozilla.org/firefox/downloads/file/3961087 --output "$ublock"
+curl -L addons.mozilla.org/firefox/downloads/file/3898202 --output "$vimium"
+curl -L addons.mozilla.org/firefox/downloads/file/3949235 --output "$yt_enhancer"
+curl -L addons.mozilla.org/firefox/downloads/file/3941589 --output "$yt_dislikes"
+curl -L addons.mozilla.org/firefox/downloads/file/3958238 --output "$yt_sponsor_block"
 
-curl -L addons.mozilla.org/firefox/downloads/file/3949235 --output "$addon"
-firefox "$addon"
-rm "$addon"
+firefox "$ublock"
+rm "$ublock"
 
-curl -L addons.mozilla.org/firefox/downloads/file/3941589 --output "$addon"
-firefox "$addon"
-rm "$addon"
+firefox "$vimium"
+rm "$vimium"
 
-curl -L addons.mozilla.org/firefox/downloads/file/3958238 --output "$addon"
-firefox "$addon"
-rm "$addon"
+firefox "$yt_enhancer"
+rm "$yt_enhancer"
+
+firefox "$yt_dislikes"
+rm "$yt_dislikes"
+
+firefox "$yt_sponsor_block"
+rm "$yt_sponsor_block"
