@@ -7,8 +7,9 @@
 
 no_color='\033[0m'
 green='\033[1;32m'
+blue='\033[1;34m'
 
-echo -e "$green WARNING: please run this script only on arch KDE Plasma Theme Edition (Flagship) from https://archlinuxgui.in/download.html$no_color"
+echo -e "$green WARNING: please run this script only on arch KDE Plasma Theme Edition (Flagship) from$blue https://archlinuxgui.in/download.html$no_color"
 echo -e "$green press enter to continue$no_color"
 read -r
 
