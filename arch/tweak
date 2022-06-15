@@ -13,10 +13,7 @@ echo -e "$green WARNING: please run this script only on arch KDE Plasma Theme Ed
 echo -e "$green press enter to continue$no_color"
 read -r
 
-curl -L gmanka.tk/arch/config/pacman.conf --output /etc/pacman.conf
-sudo pacman -Sy
-
-echo -e "$green syncing pacman databases$no_color"
+sudo curl -L gmanka.tk/arch/config/pacman.conf --output /etc/pacman.conf
 sudo pacman -Sy
 
 echo -e "$green configuring kde$no_color"
