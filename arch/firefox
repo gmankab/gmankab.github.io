@@ -1,7 +1,27 @@
 #!/bin/bash
 
-addon="$HOME/Desktop/ublock.xpi"
+addon="$HOME/Desktop/addon.xpi"
+no_color='\033[0m'
+green='\033[1;32m'
+
+echo -e "$green now firefox will be launced to install some addons, you need to press 'yes' in firefox window, and then close firefox. Press enter to continue$no_color"
 
 curl -L addons.mozilla.org/firefox/downloads/file/3961087 --output "$addon"
-
 firefox "$addon"
+rm "$addon"
+
+curl -L addons.mozilla.org/firefox/downloads/file/3898202 --output "$addon"
+firefox "$addon"
+rm "$addon"
+
+curl -L addons.mozilla.org/firefox/downloads/file/3949235 --output "$addon"
+firefox "$addon"
+rm "$addon"
+
+curl -L addons.mozilla.org/firefox/downloads/file/3941589 --output "$addon"
+firefox "$addon"
+rm "$addon"
+
+curl -L addons.mozilla.org/firefox/downloads/file/3958238 --output "$addon"
+firefox "$addon"
+rm "$addon"
