@@ -4,7 +4,9 @@ addon="$HOME/Desktop/addon.xpi"
 no_color='\033[0m'
 green='\033[1;32m'
 
-echo -e "$green now firefox will be launced to install some addons, you need to press 'yes' in firefox window, and then close firefox. Press enter to continue$no_color"
+echo -e "$green now firefox will be launced to install some addons, you need to press 'Add' in firefox window, and then close firefox. Press enter to continue$no_color"
+
+read -r
 
 curl -L addons.mozilla.org/firefox/downloads/file/3961087 --output "$addon"
 firefox "$addon"
