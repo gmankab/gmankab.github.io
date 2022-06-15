@@ -29,5 +29,5 @@ sh <(curl -sSL gmanka.tk/arch/git)
 echo -e "$green installing firefox extensions$no_color"
 sh <(curl -sSL gmanka.tk/arch/firefox)
 
-echo -e "$green installing apps$no_color"
-sh <(curl -sSL gmanka.tk/arch/apps)
+# echo -e "$green installing apps$no_color"
+# sh <(curl -sSL gmanka.tk/arch/apps)
