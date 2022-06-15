@@ -31,7 +31,7 @@ echo "font dpi forced to 125"
 
 opensans="Open Sans,10,-1,5,50,0,0,0,0,0"
 kwriteconfig5 --file "$kgl" --group "General" --key "fixed" "JetBrains Mono,10,-1,5,57,0,0,0,0,0,Medium"
-kwriteconfig5 --file "$kgl" --group "General" --key "font" 
+kwriteconfig5 --file "$kgl" --group "General" --key "font" "$opensans"
 kwriteconfig5 --file "$kgl" --group "General" --key "menuFont" "$opensans"
 kwriteconfig5 --file "$kgl" --group "General" --key "smallestReadableFont" "$opensans"
 kwriteconfig5 --file "$kgl" --group "General" --key "toolBarFont" "$opensans"
