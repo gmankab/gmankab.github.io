@@ -29,6 +29,16 @@ echo "setting display scale to 125%"
 echo "font dpi forced to 125"
 echo "default fonts changed to open sans and jet brains mono"
 echo "disabled screen locking timeout"
+echo "changed wallpapper"
+echo "changed log out image"
 echo -e "$green need to log out$no_color"
 
-sudo curl -L gmanka.tk/wp/blobs-d.png --output /usr/share/wallpapers/wall/wall.png
+sddmbg="/usr/share/sddm/themes/Qogir/background.jpg"
+wp="$HOME/wp.png"
+sudo rm "$sddmbg"
+rm "$wp"
+
+curl -L gmanka.tk/wp/blobs-d.png --output "$wp"
+sudo curl -L gmanka.tk/wp/blobs-d.jpg --output "$sddmbg"
+
+kwriteconfig5 --file "$HOME/.config/plasma-org.kde.plasma.desktop-appletsrc" --group 'Containments' --group '1' --group 'Wallpaper' --group 'org.kde.image' --group 'General' --key 'Image' "$wp"
