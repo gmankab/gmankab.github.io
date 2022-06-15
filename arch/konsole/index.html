@@ -3,6 +3,7 @@
 kdir="$HOME/.local/share/konsole"
 mkdir "$kdir/shortcuts"
 
-curl -L gmanka.tk/arch/kde/konsolerc --output "$HOME/.config/konsolerc"
+kwriteconfig5 --file "$HOME/.config/konsolerc" --group "Desktop Entry" --key "DefaultProfile" "gmanka.profile"
+
 curl -L gmanka.tk/arch/konsole/gmanka.profile --output "$kdir/gmanka.profile"
 curl -L gmanka.tk/arch/konsole/gmanka.shortcuts --output "$kdir/shortcuts/gmanka.shortcuts"
