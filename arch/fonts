@@ -1,4 +1,0 @@
-#!/bin/bash
-
-yes | sudo paru -S ttf-opensans ttf-jetbrains-mono
-echo -e "$green installed open sans and jet brains mono$no_color"

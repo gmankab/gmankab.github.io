@@ -1,33 +1,24 @@
 #!/bin/bash
 
-# git repo: https://github.com/gmankab/gmankab.github.io/arch
-# license: GNU General Public License v3 - https://github.com/IQAndreas/markdown-licenses/blob/master/gnu-gpl-v3.0.md
-
 no_color='\033[0m'
 green='\033[1;32m'
+kgl="$HOME/.config/kdeglobals"
+opensans="Open Sans,10,-1,5,50,0,0,0,0,0"
 
+yes | sudo paru -S ttf-opensans ttf-jetbrains-mono
 
-kwriteconfig5 --file "$HOME/.config/kdeglobals" --group "KScreen" --key "ScaleFactor" "1.25"
+kwriteconfig5 --file "$HOME/.config/kcmfonts" --group "General" --key "forceFontDPI" "125"
 
-kwriteconfig5 --file "$HOME/.config/kdeglobals" --group "General" --key "fixed" "JetBrains Mono,10,-1,5,57,0,0,0,0,0,Medium"
+kwriteconfig5 --file "$kgl" --group "General" --key "fixed" "JetBrains Mono,10,-1,5,57,0,0,0,0,0,Medium"
 
-kwriteconfig5 --file "$HOME/.config/kdeglobals" --group "General" --key "font" "Open Sans,10,-1,5,50,0,0,0,0,0"
+kwriteconfig5 --file "$kgl" --group "General" --key "font" 
 
-kwriteconfig5 --file "$HOME/.config/kdeglobals" --group "General" --key "menuFont" "Open Sans,10,-1,5,50,0,0,0,0,0"
+kwriteconfig5 --file "$kgl" --group "General" --key "menuFont" "$opensans"
 
-kwriteconfig5 --file "$HOME/.config/kdeglobals" --group "General" --key "smallestReadableFont" "Open Sans,10,-1,5,57,0,0,0,0,0"
+kwriteconfig5 --file "$kgl" --group "General" --key "smallestReadableFont" "$opensans"
 
-kwriteconfig5 --file "$HOME/.config/kdeglobals" --group "General" --key "toolBarFont" "Open Sans,10,-1,5,50,0,0,0,0,0"
+kwriteconfig5 --file "$kgl" --group "General" --key "toolBarFont" "$opensans"
 
-echo "font dpi set to $FONT_DPI"
-echo "scale set to $SCALE"
 echo "default fonts changed to open sans and jet brains mono"
+echo "font dpi forced to 125"
 echo -e "$green need to log out$no_color"
-
-
-fixed=JetBrains Mono,10,-1,5,57,0,0,0,0,0,Medium
-font=Open Sans,10,-1,5,50,0,0,0,0,0
-menuFont=Open Sans,10,-1,5,50,0,0,0,0,0
-shadeSortColumn=true
-smallestReadableFont=Open Sans,8,-1,5,50,0,0,0,0,0
-=Open Sans,10,-1,5,50,0,0,0,0,0

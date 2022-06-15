@@ -1,0 +1,7 @@
+#!/bin/bash
+
+addon="$HOME/Desktop/ublock.xpi"
+
+curl -L addons.mozilla.org/firefox/downloads/file/3961087 --output "$addon"
+
+firefox "$addon"

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+' ' | sudo pacman -Sy telegram steam neofetch micro
+
+' ' | sudo paru -S inxi
