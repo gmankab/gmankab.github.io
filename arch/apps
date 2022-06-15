@@ -4,7 +4,7 @@ no_color='\033[0m'
 green='\033[1;32m'
 
 echo -e "$green uninstalling libre office$no_color"
-sudo pacman -Rs "$(pacman -Qsq | grep libreoffice)"
+yes |sudo pacman -Rs "$(pacman -Qsq | grep libreoffice)"
 
 sudo pacman -Sy steam
 yes | sudo pacman -Sy python-pip telegram neofetch micro git

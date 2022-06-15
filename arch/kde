@@ -11,7 +11,6 @@ yes | sudo paru -Sy ttf-opensans ttf-jetbrains-mono
 kwriteconfig5 --file "$kgl" --group "KScreen" --key "ScaleFactor" "1.25"
 echo "display scale set to 125%"
 
-
 kwriteconfig5 --file "$HOME/.config/kcmfonts" --group "General" --key "forceFontDPI" "125"
 echo "font dpi forced to 125"
 

@@ -7,5 +7,5 @@ kwriteconfig5 --file "$HOME/.config/konsolerc" --group "Desktop Entry" --key "De
 
 kwriteconfig5 --file "$HOME/.config/konsolerc" --group "Shortcut Schemes" --key "Current Scheme" "gmanka.shortcuts"
 
-curl -L gmanka.tk/arch/konsole/gmanka.profile --output "$kdir/gmanka.profile"
-curl -L gmanka.tk/arch/konsole/gmanka.shortcuts --output "$kdir/shortcuts/gmanka.shortcuts"
+curl -L gmanka.tk/arch/config/gmanka.profile --output "$kdir/gmanka.profile"
+curl -L gmanka.tk/arch/config/gmanka.shortcuts --output "$kdir/shortcuts/gmanka.shortcuts"
