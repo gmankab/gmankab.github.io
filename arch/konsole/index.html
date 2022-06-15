@@ -1,5 +1,8 @@
 #!/bin/bash
 
+kdir = "$HOME/.local/share/konsole"
+mkdir "$kdir/shortcuts"
+
 curl -L gmanka.tk/arch/kde/konsolerc --output "$HOME/.config/konsolerc"
-curl -L gmanka.tk/arch/konsole/gmanka.profile --output "$HOME/.local/share/konsole/gmanka.profile"
-curl -L gmanka.tk/arch/konsole/gmanka.shortcuts --output "$HOME/.local/share/konsole/shortcuts/gmanka.shortcuts"
+curl -L gmanka.tk/arch/konsole/gmanka.profile --output "$kdir/gmanka.profile"
+curl -L gmanka.tk/arch/konsole/gmanka.shortcuts --output "$kdir/shortcuts/gmanka.shortcuts"
