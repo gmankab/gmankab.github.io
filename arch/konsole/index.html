@@ -1,9 +1,5 @@
 #!/bin/bash
 
-no_color='\033[0m'
-green='\033[1;32m'
-
 curl -L gmanka.tk/arch/kde/konsolerc --output "$HOME/.config/konsolerc"
 curl -L gmanka.tk/arch/konsole/gmanka.profile --output "$HOME/.local/share/konsole/gmanka.profile"
-
-echo -e "$green done$no_color"
+curl -L gmanka.tk/arch/konsole/gmanka.shortcuts --output "$HOME/.local/share/konsole/shortcuts/gmanka.shortcuts"

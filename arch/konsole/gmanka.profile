@@ -55,7 +55,7 @@ UnderlineLinksEnabled=true
 WordCharacters=:@-./_~?&=%+#
 
 [Keyboard]
-KeyBindings=default
+KeyBindings=gmanka.shortcuts
 
 [Scrolling]
 HighlightScrolledLines=true

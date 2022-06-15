@@ -11,5 +11,4 @@ yes | sudo pacman -Sy python-pip telegram neofetch micro git
 
 sudo pip install -U pip
 
-
 ' ' | sudo paru -Sy inxi
