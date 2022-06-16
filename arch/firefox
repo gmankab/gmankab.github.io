@@ -1,9 +1,5 @@
 #!/bin/bash
 
-no_color='\033[0m'
-green='\033[1;32m'
-blue='\033[1;34m'
-
 ublock="$HOME/Desktop/ublock.xpi"
 vimium="$HOME/Desktop/vimium.xpi"
 yt_enhancer="$HOME/Desktop/yt_enhancer.xpi"
@@ -15,9 +11,6 @@ curl -L 'addons.mozilla.org/firefox/downloads/file/3898202' --output "$vimium"
 curl -L 'addons.mozilla.org/firefox/downloads/file/3949235' --output "$yt_enhancer"
 curl -L 'addons.mozilla.org/firefox/downloads/file/3941589' --output "$yt_dislikes"
 curl -L 'addons.mozilla.org/firefox/downloads/file/3958238' --output "$yt_sponsor_block"
-
-echo -e "$green now firefox will be launced to install some addons, you need to press 'Add' in firefox window to confirm installing addon, and then close firefox. You can press$blue Alt+a$green to confirm installing and$blue Ctrl+w$green to close window without mouse. Press enter to continue$no_color"
-read -r
 
 firefox "$ublock" "$vimium" "$yt_enhancer" "$yt_dislikes" "$yt_sponsor_block"
 rm "$ublock" "$vimium" "$yt_enhancer" "$yt_dislikes" "$yt_sponsor_block"
