@@ -2,6 +2,7 @@
 
 sudo pacman --noconfirm -Rnc zsh
 rm "$HOME/.zshrc"
+sudo rm -rf "$HOME/.oh-my-zsh"
 sudo rm -rf "/etc/zsh"
 sudo pacman --noconfirm -Sy zsh git
 sh -c "$(curl -fsSL raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
