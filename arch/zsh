@@ -6,3 +6,5 @@ sudo rm -rf "/etc/zsh"
 sudo pacman --noconfirm -Sy zsh git
 sh -c "$(curl -fsSL raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 sudo chsh -s /bin/zsh "$USER"
+rm "$HOME/.zshrc"
+curl -sSL gmanka.tk/config/zshrc > "$HOME/.zshrc"
