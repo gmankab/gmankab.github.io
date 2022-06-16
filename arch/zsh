@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman --noconfirm -Rn zsh
+sudo pacman --noconfirm -Rnс zsh
 rm "$HOME/.zshrc"
 sudo rm -rf "/etc/zsh"
 sudo pacman --noconfirm -Sy zsh git
