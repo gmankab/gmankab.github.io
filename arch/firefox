@@ -19,17 +19,17 @@ curl -L 'addons.mozilla.org/firefox/downloads/file/3958238' --output "$yt_sponso
 echo -e "$green now firefox will be launced to install some addons, you need to press 'Add' in firefox window to confirm installing addon, and then close firefox. You can press$blue Alt+a$green to confirm installing and$blue Ctrl+w$green to close window without mouse. Press enter to continue$no_color"
 read -r
 
-firefox "$ublock"
+firefox "$ublock" "$vimium" "$yt_enhancer" "$yt_dislikes" "$yt_sponsor_block"
 rm "$ublock"
 
-firefox "$vimium"
-rm "$vimium"
+# firefox "$vimium"
+# rm "$vimium"
 
-firefox "$yt_enhancer"
-rm "$yt_enhancer"
+# firefox "$yt_enhancer"
+# rm "$yt_enhancer"
 
-firefox "$yt_dislikes"
-rm "$yt_dislikes"
+# firefox "$yt_dislikes"
+# rm "$yt_dislikes"
 
-firefox "$yt_sponsor_block"
-rm "$yt_sponsor_block"
+# firefox "$yt_sponsor_block"
+# rm "$yt_sponsor_block"
