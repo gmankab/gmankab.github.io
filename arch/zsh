@@ -1,7 +1,8 @@
 #!/bin/bash
 
 sudo pacman --noconfirm -Rn zsh
-rm -rf "$HOME/.zshrc"
+rm "$HOME/.zshrc"
+sudo rm -rf "/etc/zsh"
 sudo pacman --noconfirm -Sy zsh git
 sh -c "$(curl -fsSL raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 sudo chsh -s /bin/zsh "$USER"

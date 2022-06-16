@@ -5,11 +5,14 @@
 
 # you can delete or comment tweak if you don't need it
 
+
 no_color='\033[0m'
 green='\033[1;32m'
 blue='\033[1;34m'
+red='\033[1;31m'
 
-echo -e "$green WARNING: please run this script only on arch KDE Plasma Theme Edition (Flagship) from$blue https://archlinuxgui.in/download.html$no_color"
+echo -e "$red WARNING: this script will change your name and email in git, and will wipe your zsh settings"
+echo -e "$green it was written for arch KDE Plasma Theme Edition (Flagship) from$blue https://archlinuxgui.in/download.html$no_color"
 echo -e "$green press enter to continue$no_color"
 read -r
 
