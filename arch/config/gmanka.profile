@@ -18,7 +18,7 @@ UseCustomCursorColor=false
 DefaultEncoding=UTF-8
 
 [General]
-Command=/bin/bash
+Command=/bin/zsh
 DimWhenInactive=false
 Environment=TERM=xterm-256color,COLORTERM=truecolor
 Icon=utilities-terminal
