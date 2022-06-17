@@ -2,7 +2,7 @@
 
 sudo pacman --noconfirm -Sy chromium unzip
 
-sudo kwriteconfig5 --file "/usr/share/applications/chromium.desktop" --group "Containments" --group "Desktop Entry" --key "Exec" "/usr/bin/chromium --force-dark-mode %U"
+sudo kwriteconfig5 --file "/usr/share/applications/chromium.desktop" --group "Desktop Entry" --key "Exec" "/usr/bin/chromium --force-dark-mode %U"
 
 zip="$HOME/Desktop/chromium.zip"
 chr_conf="$HOME/.config/chromium"
