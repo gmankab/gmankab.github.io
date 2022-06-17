@@ -6,8 +6,10 @@ green='\033[1;32m'
 echo -e "$green uninstalling libre office$no_color"
 sudo pacman --noconfirm -Rs "$(pacman -Qsq | grep libreoffice)"
 
-sudo pacman --noconfirm -Sy steam python-pip telegram neofetch micro
+sudo pacman --noconfirm -Sy steam python-pip telegram-desktop neofetch micro unzip
 
 sudo pip install -U pip
 
 paru --noconfirm -Sy inxi yay
+
+kwriteconfig5 --file "$HOME/.config/plasma-org.kde.plasma.desktop-appletsrc" --group "Containments" --group "2" --group "Applets" --group "5" --group "Configuration" --group "General" --key "launchers" "launchers=applications:org.kde.konsole.desktop,preferred://filemanager,applications:firefox.desktop,applications:telegramdesktop.desktop,applications:systemsettings.desktop,applications:chromium.desktop"

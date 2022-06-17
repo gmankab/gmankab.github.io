@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo pacman --noconfirm -Sy firefox
+
 ublock="$HOME/Desktop/ublock.xpi"
 vimium="$HOME/Desktop/vimium.xpi"
 yt_enhancer="$HOME/Desktop/yt_enhancer.xpi"
