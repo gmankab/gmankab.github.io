@@ -4,9 +4,12 @@ sudo pacman --noconfirm -Sy chromium unzip
 
 kwriteconfig5 --file "$HOME/.local/share/applications/chromium.desktop" --group "Containments" --group "Desktop Entry" --key "Exec" "/usr/bin/chromium --force-dark-mode %U"
 
-rm "$HOME/Desktop/chromium.zip"
-curl -L gmanka.tk/arch/config/chromium.zip --output "$HOME/Desktop/chromium.zip"
+zip="$HOME/Desktop/chromium.zip"
+chr_conf="$HOME/.config/chromium"
 
-rm -rf "$HOME/.config/chromium"
-mkdir "$HOME/.config/chromium"
-unzip "$HOME/Desktop/chromium" -d "$HOME/.config/chromium"
+rm "$zip"
+curl -L gmanka.tk/arch/config/chromium.zip --output "$zip"
+
+rm -rf "$chr_conf"
+mkdir "$chr_conf"
+unzip "$zip" -d "$chr_conf"
