@@ -12,6 +12,7 @@ sudo pacman --noconfirm -Rs "$(pacman -Qsq | grep libreoffice)"
 echo -e "installing useful apps"
 sudo pacman --noconfirm -Sy steam python-pip telegram-desktop neofetch micro unzip virtualbox
 
+
 sudo pip install -U pip
 
 paru --noconfirm -Sy inxi yay
