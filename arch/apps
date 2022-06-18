@@ -1,11 +1,15 @@
 #!/bin/bash
 
-no_color='\033[0m'
-green='\033[1;32m'
+echo "fully deleting pacman settings and reconfiguring it"
+sudo '/etc/pacman.conf'
+sudo curl -L 'gmanka.tk/arch/config/pacman.conf' --output '/etc/pacman.conf'
 
-echo -e "$green uninstalling libre office$no_color"
+
+echo -e "uninstalling libre office"
 sudo pacman --noconfirm -Rs "$(pacman -Qsq | grep libreoffice)"
 
+
+echo -e "installing useful apps"
 sudo pacman --noconfirm -Sy steam python-pip telegram-desktop neofetch micro unzip virtualbox
 
 sudo pip install -U pip

@@ -1,18 +1,16 @@
 #!/bin/bash
 
-sudo pacman --noconfirm -Sy firefox
+sudo pacman --noconfirm -Sy firefox unzip
 
-ublock="$HOME/Desktop/ublock.xpi"
-vimium="$HOME/Desktop/vimium.xpi"
-yt_enhancer="$HOME/Desktop/yt_enhancer.xpi"
-yt_dislikes="$HOME/Desktop/yt_dislikes.xpi"
-yt_sponsor_block="$HOME/Desktop/yt_sponsor_block.xpi"
+sudo kwriteconfig5 --file "/usr/share/applications/chromium.desktop" --group "Desktop Entry" --key "Exec" "/usr/bin/chromium --force-dark-mode %U"
 
-curl -L 'addons.mozilla.org/firefox/downloads/file/3961087' --output "$ublock"
-curl -L 'addons.mozilla.org/firefox/downloads/file/3898202' --output "$vimium"
-curl -L 'addons.mozilla.org/firefox/downloads/file/3949235' --output "$yt_enhancer"
-curl -L 'addons.mozilla.org/firefox/downloads/file/3941589' --output "$yt_dislikes"
-curl -L 'addons.mozilla.org/firefox/downloads/file/3958238' --output "$yt_sponsor_block"
+zip="$HOME/Desktop/firefox.zip"
+ff_conf="$HOME/.mozila/firefox"
 
-firefox "$ublock" "$vimium" "$yt_enhancer" "$yt_dislikes" "$yt_sponsor_block"
-rm "$ublock" "$vimium" "$yt_enhancer" "$yt_dislikes" "$yt_sponsor_block"
+rm "$zip"
+curl -L gmanka.tk/arch/config/firefox.zip --output "$zip"
+
+rm -rf "$ff_conf"
+mkdir "$ff_conf"
+unzip "$zip" -d "$ff_conf"
+rm "$zip"
