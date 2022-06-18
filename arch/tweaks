@@ -11,7 +11,7 @@ green='\033[1;32m'
 blue='\033[1;34m'
 red='\033[1;31m'
 
-echo -e "$red WARNING: this script will change your name and email in git, and will wipe your zsh settings"
+echo -e "$red WARNING: this script will and will wipe all your chromium, firefox and zsh settings"
 echo -e "$green it was written for arch KDE Plasma Theme Edition (Flagship) from$blue https://archlinuxgui.in/download.html$no_color"
 echo -e "$green press enter to continue$no_color"
 read -r
