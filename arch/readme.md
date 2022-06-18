@@ -4,7 +4,7 @@ I wrote this script for myself so that with one command I could bring to the ide
 
 ## WARNING
 
-this script will and will wipe all your chromium, firefox and zsh settings
+this script will wipe all your chromium, firefox and zsh settings
 
 run all tweaks:
 
