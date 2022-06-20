@@ -12,6 +12,6 @@ rm "$zip"
 curl -L gmanka.tk/arch/config/chromium.zip --output "$zip"
 
 rm -rf "$chr_conf"
-mkdir "$chr_conf"
+mkdir -p "$chr_conf"
 unzip -qq "$zip" -d "$chr_conf"
 rm "$zip"
