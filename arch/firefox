@@ -12,5 +12,5 @@ curl -L gmanka.tk/arch/config/firefox.zip --output "$zip"
 
 rm -rf "$ff_conf"
 mkdir "$ff_conf"
-unzip "$zip" -d "$ff_conf"
+unzip -p "$zip" -d "$ff_conf"
 rm "$zip"

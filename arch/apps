@@ -10,7 +10,7 @@ sudo pacman --noconfirm -Rs "$(pacman -Qsq | grep libreoffice)"
 
 
 echo -e "installing useful apps"
-sudo pacman --noconfirm -Sy steam python-pip telegram-desktop neofetch micro unzip virtualbox
+sudo pacman --noconfirm -Sy steam python-pip telegram-desktop neofetch micro unzip virtualbox chromium firefox konsole 
 
 
 sudo pip install -U pip
