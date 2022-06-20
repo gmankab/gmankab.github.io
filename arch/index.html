@@ -30,8 +30,11 @@ sh <(curl -sSL gmanka.tk/arch/git)
 echo -e "$green configuring zsh$no_color"
 sh <(curl -sSL gmanka.tk/arch/zsh)
 
-echo -e "$green installing firefox addons$no_color"
+echo -e "$green configuring firefox$no_color"
 sh <(curl -sSL gmanka.tk/arch/firefox)
+
+echo -e "$green configuring chromium$no_color"
+sh <(curl -sSL gmanka.tk/arch/chromium)
 
 echo -e "$green installing apps$no_color"
 sh <(curl -sSL gmanka.tk/arch/apps)
