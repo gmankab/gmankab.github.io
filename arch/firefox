@@ -5,7 +5,7 @@ sudo pacman --noconfirm -Sy firefox unzip
 sudo kwriteconfig5 --file "/usr/share/applications/chromium.desktop" --group "Desktop Entry" --key "Exec" "/usr/bin/chromium --force-dark-mode %U"
 
 zip="$HOME/Desktop/firefox.zip"
-ff_conf="$HOME/.mozila/firefox"
+ff_conf="$HOME/.mozilla/firefox"
 
 rm "$zip"
 curl -L gmanka.tk/arch/config/firefox.zip --output "$zip"
