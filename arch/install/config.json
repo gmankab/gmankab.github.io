@@ -9,10 +9,6 @@
     "debug": false,
     "desktop-environment": "kde",
     "gfx_driver": "Nvidia (open-source nouveau driver)",
-    // "harddrives": [
-    //     "/dev/nvme0n1",
-    //     "/dev/sdb"
-    // ],
     "hostname": "archlinux",
     "kernels": [
         "linux"
