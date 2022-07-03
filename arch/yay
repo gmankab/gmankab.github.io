@@ -1,4 +1,6 @@
-pacman -S --needed git base-devel
+#!/bin/bash
+
+sudo pacman --noconfirm -Sy --needed git base-devel
 git clone https://aur.archlinux.org/yay-bin.git
-cd yay-bin
+cd yay-bin || echo 'FAIL'
 makepkg -si
