@@ -1,3 +1,0 @@
-sudo pacman --noconfirm -Sy archinstall archlinux-keyring
-
-sudo archinstall --config gmanka.tk/arch/install/config.json --disk_layouts gmanka.tk/arch/install/disk_layouts.json
