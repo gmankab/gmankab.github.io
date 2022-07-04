@@ -33,7 +33,7 @@
     "save_config": null,
     "script": "guided",
     "silent": false,
-    "swap": false,
+    "swap": true,
     "sys-encoding": "UTF-8",
     "sys-language": "en_US",
     "timezone": "Europe/Samara",
