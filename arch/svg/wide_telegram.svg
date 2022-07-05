@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   version="1.1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 450.00003 49.999999"
+   xml:space="preserve"
+   id="svg94"
+   sodipodi:docname="wide_telegram.svg"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   width="450"
+   height="50"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs98"><clipPath
+     id="clip0"><rect
+       width="71"
+       height="55"
+       fill="#ffffff"
+       id="rect1030"
+       x="0"
+       y="0" /></clipPath></defs><sodipodi:namedview
+   id="namedview96"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#000000"
+   showgrid="false"
+   inkscape:zoom="2.5364785"
+   inkscape:cx="218.0188"
+   inkscape:cy="56.180251"
+   inkscape:window-width="1920"
+   inkscape:window-height="999"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="layer1" />
+<style
+   type="text/css"
+   id="style74">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{fill:#2091C0;}
+	.st3{fill:#FFFFFF;}
+	.st4{font-family:'JetBrainsMono-Medium';}
+	.st5{font-size:47.0914px;}
+</style>
+
+
+<g
+   inkscape:groupmode="layer"
+   id="layer1"
+   inkscape:label="background"><rect
+     x="174.63797"
+     y="1.9475327"
+     class="st2"
+     width="273.02664"
+     height="46.104935"
+     id="rect83"
+     inkscape:label="gray"
+     style="fill:#333333;stroke-width:0.853945"
+     ry="23.052467" /><rect
+     style="fill:#2091c0;fill-opacity:1;stroke-width:0.98941"
+     id="rect1261"
+     width="100.94121"
+     height="46.104935"
+     x="124.16737"
+     y="1.9475327"
+     ry="23.052467"
+     rx="0"
+     inkscape:label="color_square" /><rect
+     style="fill:#2091c0;fill-opacity:1;stroke-width:1.05406"
+     id="rect1506"
+     width="193.57217"
+     height="46.104935"
+     x="2.5525103"
+     y="1.9475327"
+     ry="22.118168"
+     inkscape:label="color_rounded" /></g><g
+   id="Слой_2"
+   transform="translate(-4)"
+   inkscape:label="foreground"
+   style="display:inline">
+	
+<text
+   xml:space="preserve"
+   style="font-size:32px;font-family:'DejaVu Sans Mono for Powerline';-inkscape-font-specification:'DejaVu Sans Mono for Powerline';fill:#ffffff"
+   x="80.52578"
+   y="36.408001"
+   id="text227"
+   inkscape:label="text"><tspan
+     sodipodi:role="line"
+     id="tspan225"
+     x="80.52578"
+     y="36.408001"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu">telegram          @gmanka</tspan></text><path
+   class="st3"
+   d="m 26.314268,24.27846 c 14.13011,-6.191025 32.41185,-13.765928 34.96109,-14.7856261 6.62804,-2.767753 8.66744,-2.185068 7.64774,3.8602871 -0.72836,4.370135 -2.84059,18.86442 -4.51581,27.823198 -1.0197,5.316999 -3.20476,5.972518 -6.70087,3.64178 -1.67522,-1.092534 -10.19699,-6.700876 -12.01788,-8.084751 -1.67522,-1.238206 -4.00596,-2.622082 -1.09253,-5.46267 1.0197,-1.019698 7.79341,-7.502067 13.11041,-12.527723 0.72835,-0.65552 -0.14567,-1.748054 -0.94687,-1.238206 -7.13788,4.734315 -17.04353,11.289518 -18.28173,12.163546 -1.89373,1.31104 -3.71462,1.893725 -6.99222,0.946862 -2.47641,-0.728356 -4.87999,-1.529548 -5.82685,-1.893725 -3.71461,-1.238206 -2.84059,-2.840588 0.65552,-4.442972 z"
+   id="path89"
+   style="fill:#ffffff;stroke-width:0.728356"
+   transform="translate(4)"
+   inkscape:label="logo" /></g></svg>
