@@ -1,1 +1,20 @@
-<meta http-equiv="refresh" content="1;url=https://raw.githubusercontent.com/gmankab/arch-tweaker/main/apps"/>
+#!/bin/bash
+
+echo "fully deleting pacman settings and reconfiguring it"
+sudo '/etc/pacman.conf'
+sudo curl -L 'gmanka.tk/arch/config/pacman.conf' --output '/etc/pacman.conf'
+
+
+echo -e "uninstalling libre office"
+sudo pacman --noconfirm -Rs "$(pacman -Qsq | grep libreoffice)"
+
+
+echo -e "installing useful apps"
+sudo pacman --noconfirm -Sy steam python-pip telegram-desktop neofetch micro unzip virtualbox chromium firefox konsole 
+
+
+sudo pip install -U pip
+
+paru --noconfirm -Sy inxi yay
+
+kwriteconfig5 --file "$HOME/.config/plasma-org.kde.plasma.desktop-appletsrc" --group "Containments" --group "2" --group "Applets" --group "5" --group "Configuration" --group "General" --key "launchers" "launchers=applications:org.kde.konsole.desktop,preferred://filemanager,applications:firefox.desktop,applications:telegramdesktop.desktop,applications:systemsettings.desktop,applications:chromium.desktop"

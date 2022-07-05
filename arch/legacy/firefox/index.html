@@ -1,1 +1,18 @@
-<meta http-equiv="refresh" content="1;url=https://raw.githubusercontent.com/gmankab/arch-tweaker/main/legacy/firefox"/>
+#!/bin/bash
+
+sudo pacman --noconfirm -Sy firefox
+
+ublock="$HOME/Desktop/ublock.xpi"
+vimium="$HOME/Desktop/vimium.xpi"
+yt_enhancer="$HOME/Desktop/yt_enhancer.xpi"
+yt_dislikes="$HOME/Desktop/yt_dislikes.xpi"
+yt_sponsor_block="$HOME/Desktop/yt_sponsor_block.xpi"
+
+curl -L 'addons.mozilla.org/firefox/downloads/file/3961087' --output "$ublock"
+curl -L 'addons.mozilla.org/firefox/downloads/file/3898202' --output "$vimium"
+curl -L 'addons.mozilla.org/firefox/downloads/file/3949235' --output "$yt_enhancer"
+curl -L 'addons.mozilla.org/firefox/downloads/file/3941589' --output "$yt_dislikes"
+curl -L 'addons.mozilla.org/firefox/downloads/file/3958238' --output "$yt_sponsor_block"
+
+firefox "$ublock" "$vimium" "$yt_enhancer" "$yt_dislikes" "$yt_sponsor_block"
+rm "$ublock" "$vimium" "$yt_enhancer" "$yt_dislikes" "$yt_sponsor_block"

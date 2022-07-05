@@ -1,1 +1,8 @@
-<meta http-equiv="refresh" content="1;url=https://raw.githubusercontent.com/gmankab/arch-tweaker/main/git"/>
+#!/bin/bash
+
+sudo pacman --noconfirm -Sy git
+
+# git config --global user.email "gmankab@gmail.com"
+# git config --global user.name "gmanka"
+git config --global credential.helper store
+git config --global init.defaultBranch main

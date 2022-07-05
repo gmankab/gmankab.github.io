@@ -1,1 +1,11 @@
-<meta http-equiv="refresh" content="1;url=https://raw.githubusercontent.com/gmankab/arch-tweaker/main/zsh"/>
+#!/bin/bash
+
+sudo pacman --noconfirm -Rnc zsh
+sudo pacman --noconfirm -Sy zsh git
+rm "$HOME/.zshrc"
+rm -rf "$HOME/.oh-my-zsh"
+sudo rm -rf "/etc/zsh"
+sh -c "$(curl -fsSL raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+sudo chsh -s /bin/zsh "$USER"
+rm "$HOME/.zshrc"
+curl -sSL gmanka.tk/arch/config/zshrc > "$HOME/.zshrc"
