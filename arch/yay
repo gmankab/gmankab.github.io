@@ -1,9 +1,0 @@
-#!/bin/bash
-
-sudo pacman --noconfirm -Sy --needed git base-devel
-cd "$HOME" || echo 'FAIL'
-git clone https://aur.archlinux.org/yay-bin.git
-cd "yay-bin" || echo 'FAIL'
-makepkg --noconfirm -si
-cd "$HOME" || echo 'FAIL'
-rm -r "$HOME/yay-bin"

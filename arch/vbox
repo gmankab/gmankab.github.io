@@ -1,5 +1,0 @@
-#!/bin/bash
-
-sudo rm /usr/bin/VBox* /usr/lib/VBox*
-modprobe -a vboxguest vboxsf vboxvideo
-
