@@ -11,32 +11,15 @@ green='\033[1;32m'
 blue='\033[1;34m'
 red='\033[1;31m'
 
-echo -e "$red WARNING: this script will wipe all your chromium, firefox and zsh settings"
-echo -e "$green it was written for arch KDE Plasma Theme Edition (Flagship) from$blue https://archlinuxgui.in/download.html$no_color"
-echo -e "$green press enter to continue$no_color"
-read -r
 
 sudo pacman -Sy
 
-echo -e "$green configuring kde$no_color"
-sh <(curl -sSL gmanka.tk/arch/kde)
-
-echo -e "$green configuring konsole$no_color"
-sh <(curl -sSL gmanka.tk/arch/konsole)
-
-echo -e "$green configuring git$no_color"
-sh <(curl -sSL gmanka.tk/arch/git)
 
 echo -e "$green configuring zsh$no_color"
 sh <(curl -sSL gmanka.tk/arch/zsh)
 
-echo -e "$green configuring firefox$no_color"
-sh <(curl -sSL gmanka.tk/arch/firefox)
+echo -e "$green installing yay and pamac$no_color"
+sh <(curl -sSL gmanka.tk/arch/pamac)
 
-echo -e "$green configuring chromium$no_color"
-sh <(curl -sSL gmanka.tk/arch/chromium)
-
-echo -e "$green installing apps$no_color"
-sh <(curl -sSL gmanka.tk/arch/apps)
 
 zsh

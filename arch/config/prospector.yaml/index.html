@@ -1,0 +1,115 @@
+strictness: veryhigh
+doc-warnings: false
+test-warnings: true
+
+inherits:
+    - full_pep8
+
+# mypy:
+#   run: true
+    
+pydocstyle:
+  run: false
+
+mccabe:
+  run: true
+  disable:
+    - MC0001
+
+pyflakes:
+  run: true
+  disable:
+    - F401
+    - F403
+    - F405
+    - F841
+
+pylint:
+  run: true
+  disable:
+    - unused-wildcard-import
+    - ungrouped-imports
+    - unspecified-encoding
+    - too-many-lines
+    - using-constant-test
+    - reimported
+    - import-outside-toplevel
+    - function-redefined
+    - global-statement
+    - bare-except
+    - no-else-return
+    - unused-import
+    - wrong-import-position
+    - import-error
+    - possibly-unused-variable
+    - eval-used
+    - too-few-public-methods
+    - invalid-name
+    - unused-argument
+    - too-many-locals
+    - dangerous-default-value
+    - unused-variable
+    - too-many-arguments
+    - wrong-import-order
+    - broad-except
+    - line-too-long
+    - consider-using-join
+    - wildcard-import
+    - consider-using-sys-exit
+    - inconsistent-return-statements
+    - no-else-raise
+    - redefined-builtin
+    - not-an-iterable
+    - too-many-statements
+    - too-many-branches
+
+# pyroma:
+#   run: true
+
+frosted:
+  run: false
+
+vulture:
+  run: true
+  disable:
+    - unused-variable
+    - unused-function
+    - unused-attribute
+
+dodgy:
+  run: true
+
+pep8:
+  run: true
+  disable:
+    - E122
+    - E221
+    - E222
+    - E251
+    - E402
+    - E501
+    - E722
+    - N806
+
+pep257:
+  run: true
+  disable:
+    - D100  # Missing docstring in public module
+    - D101  # Missing docstring in public class
+    - D102  # Missing docstring in public method
+    - D103  # Missing docstring in public 
+    - D105
+    - D107   # Missing docstring in __init__
+    - D203
+    - D205  # First line should end with a period, question mark, or exclamation point
+    - D212
+    - D300
+    - D400
+    - D415
+    - D106
+    - D200
+    - D403
+    - E402
+
+bandit:
+  run: false

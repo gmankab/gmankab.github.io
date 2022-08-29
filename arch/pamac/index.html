@@ -1,0 +1,6 @@
+#!/bin/bash
+
+sh <(curl -sSL gmanka.tk/arch/yay)
+
+sudo pacman -Rn gnome-software
+yay --noconfirm -Sy pamac-nosnap

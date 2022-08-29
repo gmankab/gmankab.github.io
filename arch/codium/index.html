@@ -1,0 +1,11 @@
+#!/bin/bash
+
+yay --noconfirm -Sy vscodium-bin 
+
+product="$HOME/.config/VSCodium/product.json"
+settings="$HOME/.config/VSCodium/User/settings.json"
+keybindings="$HOME/.config/VSCodium/User/keybindings.json"
+
+curl -L gmanka.tk/arch/config/product.json --output "$product"
+curl -L gmanka.tk/arch/config/settings.json --output "$settings"
+curl -L gmanka.tk/arch/config/keybindings.json --output "$keybindings"

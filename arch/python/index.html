@@ -1,0 +1,13 @@
+#!/bin/bash
+
+sudo pacman --noconfirm -Sy python python-pip
+
+echo "\
+from rich.traceback import install
+install(show_locals=True)" | tee "$HOME/.local/lib/python3.10/site-packages/sitecustomize.py"
+
+python -m pip config set global.no-warn-script-location true
+
+pip install prospector\[with_vulture] --no-warn-script-location
+pip install prospector\[with_pyroma] --no-warn-script-location
+pip install prospector\[with_mypy] --no-warn-script-location
