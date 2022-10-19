@@ -1,11 +1,20 @@
 #!/bin/bash
 
-yay --noconfirm -Sy vscodium-bin 
-
-product="$HOME/.config/VSCodium/product.json"
-settings="$HOME/.config/VSCodium/User/settings.json"
-keybindings="$HOME/.config/VSCodium/User/keybindings.json"
+product="$HOME/.config/VSCodium - Insiders/product.json"
+settings="$HOME/.config/VSCodium - Insiders/User/settings.json"
+keybindings="$HOME/.config/VSCodium - Insiders/User/keybindings.json"
 
 curl -L gmanka.tk/arch/config/product.json --output "$product"
 curl -L gmanka.tk/arch/config/settings.json --output "$settings"
 curl -L gmanka.tk/arch/config/keybindings.json --output "$keybindings"
+
+code --install-extension viktorqvarfordt.vscode-pitch-black-theme
+code --install-extension ryuta46.multi-command
+
+code --install-extension ms-python.python
+code --uninstall-extension ms-toolsai.jupyter
+
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension streetsidesoftware.code-spell-checker-russian
+code --install-extension streetsidesoftware.code-spell-checker-ukrainian
+
