@@ -1,4 +1,4 @@
-echo off
+@echo off
 
 set cwd=%~dp0
 set proj_name=reposter
@@ -44,3 +44,5 @@ if not exist "%proj_py%" (
 )
 
 "%python%" "%proj_py%" portable %*
+
+pause
