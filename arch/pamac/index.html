@@ -1,6 +1,23 @@
 #!/bin/bash
 
-sh <(curl -sSL gmanka.tk/arch/yay)
+mkdir ~/pamac-build
+sudo pacman -Rn --noconfirm gnome-software
+sudo pacman -Sy --noconfirm --needed base-devel git
 
-sudo pacman -Rn gnome-software
-yay --noconfirm -Sy pamac-nosnap
+cd ~/pamac-build
+git clone https://aur.archlinux.org/archlinux-appstream-data-pamac.git
+cd archlinux-appstream-data-pamac
+makepkg --noconfirm -si
+
+cd ~/pamac-build
+git clone https://aur.archlinux.org/libpamac-nosnap.git
+cd libpamac-nosnap
+makepkg --noconfirm -si
+
+cd ~/pamac-build
+git clone https://aur.archlinux.org/pamac-nosnap.git
+cd pamac-nosnap
+makepkg --noconfirm -si
+
+cd ~
+rm -rf ~/pamac-build
