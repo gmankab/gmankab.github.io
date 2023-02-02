@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# installing portals
+sudo pacman -Sy --noconfirm --needed xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-gnome 
+
+# installing gnome-tweaks, kvantum, flatpak
+sudo pacman -Sy --noconfirm --needed gnome-tweaks kvantum flatpak
+
+# installing adw-gtk3 theme
+cd ~
+git clone https://aur.archlinux.org/adw-gtk3.git
+cd adw-gtk3
+makepkg --noconfirm -si
+cd ~
+rm -rf ~/adw-gtk3
+
+# installing kvantum-theme-libadwaita-git
+cd ~
+git clone https://aur.archlinux.org/kvantum-theme-libadwaita-git.git
+cd kvantum-theme-libadwaita-git
+makepkg --noconfirm -si
+cd ~
+rm -rf ~/kvantum-theme-libadwaita-git
+
+# enabling dark theme for gtk4 apps
+gsettings set org.gnome.desktop.interface color-scheme prefer-dark
+
+# enabling dark theme for gtk3 apps
+gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-dark
+
+# enabling dark theme for flarpak apps
+
+flatpak install -y org.gtk.Gtk3theme.adw-gtk3 org.gtk.Gtk3theme.adw-gtk3-dark
+
+# enabling dark theme for qt apps
+echo "\
+[General]
+theme=KvLibadwaitaDark
+" | tee ~/.config/Kvantum/kvantum.kvconfig
+
+echo "QT_STYLE_OVERRIDE=kvantum" | sudo tee /etc/environment
+echo "logout required"
+
+# enabling russian layout
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'ru')]"
+
+
