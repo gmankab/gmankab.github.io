@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # installing portals
-sudo pacman -Sy --noconfirm --needed xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-gnome 
+sudo pacman -Sy --noconfirm --needed xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-gnome xdg-desktop-portal-kde
 
 # installing gnome-tweaks, kvantum, flatpak
 sudo pacman -Sy --noconfirm --needed gnome-tweaks kvantum flatpak
