@@ -3,8 +3,8 @@
 # installing portals
 sudo pacman -Sy --noconfirm --needed xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-gnome xdg-desktop-portal-kde
 
-# installing gnome-tweaks, kvantum, flatpak
-sudo pacman -Sy --noconfirm --needed gnome-tweaks kvantum flatpak
+# installing gnome-tweaks, kvantum, flatpak, git
+sudo pacman -Sy --noconfirm --needed gnome-tweaks kvantum flatpak git
 
 # installing adw-gtk3 theme
 cd ~
@@ -28,7 +28,7 @@ gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 # enabling dark theme for gtk3 apps
 gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-dark
 
-# enabling dark theme for flarpak apps
+# enabling dark theme for flatpak apps
 
 flatpak install -y org.gtk.Gtk3theme.adw-gtk3 org.gtk.Gtk3theme.adw-gtk3-dark
 
