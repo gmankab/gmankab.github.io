@@ -40,7 +40,4 @@ theme=KvLibadwaitaDark
 echo "QT_STYLE_OVERRIDE=kvantum" | sudo tee /etc/environment
 echo "logout required"
 
-# enabling russian layout
-gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'ru')]"
-
 
