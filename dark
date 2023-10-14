@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # installing portals
 sudo pacman -Sy --noconfirm --needed xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-gnome xdg-desktop-portal-kde
