@@ -143,7 +143,7 @@ class PackageInstaller():
         if dnf:
             self.install_command = ['sudo', dnf, 'install', '-y']
         elif apt:
-            self.install_command = ['sudo', apt, 'update']
+            self.install_command = ['sudo', apt, 'install']
         elif pacman:
             self.install_command = ['sudo', pacman, '-Sy', '--noconfirm']
         else:
