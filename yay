@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -Sy --noconfirm --needed git base-devel
+sudo pacman -Sy --noconfirm --needed git base-devel fakeroot
 
 cd ~
 git clone https://aur.archlinux.org/yay-bin.git
